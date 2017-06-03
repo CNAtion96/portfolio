@@ -5,13 +5,13 @@
             overflow-y: scroll;
             height: 92vh;
             //Portfolio page//
-             $finalClipPath: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0);
-            $initialClipPath: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0);
+             $finalClipPath: polygon(100% 50%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0 0%, 50% 0%, 100% 0, 100% 0);
+            $initialClipPath: polygon(50% 35%, 100% 0, 100% 0, 65% 50%, 100% 100%, 50% 65%, 0 100%, 35% 50%, 0 0, 0 0);
             $middleClipPath: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0);
 
             @keyframes unfold {
-                0% {clip-path:$initialClipPath;}
-                50% {clip-path: $middleClipPath;}
+                0% {clip-path:$finalClipPath;}
+                50% {clip-path:$finalClipPath;}
                 100% {clip-path:$finalClipPath;}
             }
              .portfolio{
@@ -40,7 +40,7 @@
                         }
                     }
                     .image{
-                        clip-path: $initialClipPath;
+                        clip-path:$finalClipPath;
                         height: 100%;
                         width: 100%;
                         background-position: center;
@@ -126,7 +126,7 @@
                     h3{
                         display: inline-block;
                         cursor: pointer;
-                        margin-left: 3vw !important;
+                        margin-left: 1vw !important;
                         font-size: 25px !important;
                         &:hover{
                             color: #b9b9b9;
