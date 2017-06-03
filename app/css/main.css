@@ -46,7 +46,6 @@ body {
     .content .tempContainer .bio h3:hover {
       color: #b9b9b9; }
   .content .aboutMe {
-    height: 60vh;
     margin-top: 10vh;
     margin-bottom: 20vh;
     text-align: center; }
@@ -55,7 +54,7 @@ body {
     .content .aboutMe .text {
       text-align: left; }
     .content .aboutMe .social {
-      height: 33vh;
+      display: none;
       margin-top: 50px;
       padding-left: 45px; }
       .content .aboutMe .social a {
@@ -72,7 +71,6 @@ body {
         .content .aboutMe .social i:hover {
           color: #b9b9b9; }
   .content .skills {
-    height: 28vh;
     text-align: center; }
     .content .skills h1 {
       text-decoration: underline;
@@ -232,7 +230,7 @@ body {
   .nav .social {
     height: 33vh;
     margin-top: 50px;
-    padding-left: 45px; }
+    padding-left: 35px; }
     .nav .social a {
       text-decoration: none;
       color: #e4e4e5 !important; }
