@@ -10,19 +10,19 @@
                     return $http({
                         method:"POST",
                         data: data,
-                        url: `http://localhost:8080/project`
+                        url: `https://portfoliobackend.herokuapp.com/project`
                     })
                 },
                 getProjects: () => {
                     return $http({
                         method:"GET",
-                        url: `http://localhost:8080/project`
+                        url: `https://portfoliobackend.herokuapp.com/project`
                     })
                 },
                 getSingleProject: (id) => {
                     return $http({
                         method:"GET",
-                        url: `http://localhost:8080/project/${id}`
+                        url: `https://portfoliobackend.herokuapp.com/project/${id}`
                     })
                 },
             }
