@@ -1,0 +1,249 @@
+body {
+  overflow: hidden;
+  color: whitesmoke;
+  font-family: 'Bubbler One', sans-serif; }
+
+.content {
+  background-color: #928dab;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+  overflow-y: scroll !important;
+  height: 100vh; }
+
+@keyframes rotateMe {
+  0% {
+    transform: rotateY("0deg"); }
+  100% {
+    transform: rotateY("180deg"); } }
+  .content .tempContainer .headshot {
+    margin-top: 5vh;
+    border-radius: 50%;
+    box-shadow: -15px 15px 15px rgba(32, 32, 32, 0.6);
+    padding: 0px !important; }
+    .content .tempContainer .headshot img {
+      cursor: pointer;
+      border-radius: 50%;
+      border: 5px solid whitesmoke;
+      max-width: 100%;
+      transition: all 1s ease-in-out 0s; }
+      .content .tempContainer .headshot img:hover {
+        transform: rotate(180deg);
+        border: 5px solid red; }
+  .content .tempContainer .typed {
+    text-align: center; }
+    .content .tempContainer .typed h1 {
+      color: whitesmoke;
+      display: inline-block; }
+  .content .tempContainer .bio h2 span {
+    cursor: pointer;
+    color: #e6e6e6;
+    cursor: pointer; }
+    .content .tempContainer .bio h2 span:hover {
+      color: #b9b9b9; }
+  .content .tempContainer .bio h3 {
+    text-align: center;
+    color: #e6e6e6;
+    cursor: pointer; }
+    .content .tempContainer .bio h3:hover {
+      color: #b9b9b9; }
+  .content .aboutMe {
+    height: 60vh;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    text-align: center; }
+    .content .aboutMe h1 {
+      text-decoration: underline; }
+    .content .aboutMe .text {
+      text-align: left; }
+    .content .aboutMe .social {
+      height: 33vh;
+      margin-top: 50px;
+      padding-left: 45px; }
+      .content .aboutMe .social a {
+        text-decoration: none;
+        color: #e4e4e5 !important; }
+      .content .aboutMe .social i {
+        cursor: pointer;
+        font-size: 45px;
+        margin-right: 25px; }
+        .content .aboutMe .social i:first-child {
+          font-size: 55px; }
+        .content .aboutMe .social i:last-child {
+          font-size: 55px; }
+        .content .aboutMe .social i:hover {
+          color: #b9b9b9; }
+  .content .skills {
+    height: 28vh;
+    text-align: center; }
+    .content .skills h1 {
+      text-decoration: underline;
+      margin-bottom: 2vh; }
+    .content .skills .icons {
+      box-shadow: -10px 10px 15px rgba(32, 32, 32, 0.45);
+      background-color: rgba(32, 32, 32, 0.9);
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      .content .skills .icons i {
+        font-size: 5em;
+        margin: 0px 10px; }
+
+@keyframes unfold {
+  0% {
+    clip-path: polygon(50% 35%, 100% 0, 100% 0, 65% 50%, 100% 100%, 50% 65%, 0 100%, 35% 50%, 0 0, 0 0); }
+  50% {
+    clip-path: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0); }
+  100% {
+    clip-path: polygon(100% 50%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0 0%, 50% 0%, 100% 0, 100% 0); } }
+  .content .portfolio {
+    margin-top: 25px; }
+    .content .portfolio .project {
+      cursor: pointer;
+      vertical-align: top;
+      height: 400px;
+      display: inline-block;
+      margin: 0px 0px;
+      padding: 0px 0px;
+      text-align: center;
+      margin-bottom: 100px !important; }
+      .content .portfolio .project:hover {
+        box-shadow: -10px 10px 10px rgba(32, 32, 32, 0.7);
+        transition: box-shadow 1s ease-in-out; }
+        .content .portfolio .project:hover .image {
+          animation-name: unfold;
+          animation-duration: 1000ms;
+          clip-path: polygon(100% 50%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0 0%, 50% 0%, 100% 0, 100% 0); }
+        .content .portfolio .project:hover .details {
+          display: inline-block;
+          color: whitesmoke;
+          background-color: rgba(32, 32, 32, 0.55); }
+      .content .portfolio .project .image {
+        clip-path: polygon(50% 35%, 100% 0, 100% 0, 65% 50%, 100% 100%, 50% 65%, 0 100%, 35% 50%, 0 0, 0 0);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative; }
+      .content .portfolio .project .details {
+        width: 100%;
+        height: 100%;
+        display: none;
+        vertical-align: top;
+        overflow-wrap: break-word; }
+        .content .portfolio .project .details p {
+          overflow-wrap: break-word; }
+  .content .slick {
+    padding: 0px;
+    height: 100vh;
+    overflow-y: scroll; }
+    .content .slick .projectImages {
+      padding: 0px;
+      padding-top: 25px; }
+      .content .slick .projectImages .screenShot {
+        padding: 0px;
+        margin-bottom: 45px;
+        box-shadow: -10px 10px 15px rgba(32, 32, 32, 0.45);
+        border: 2px solid whitesmoke; }
+        .content .slick .projectImages .screenShot img {
+          max-width: 100%; }
+  .content .contact {
+    margin-top: 5vh; }
+    .content .contact span {
+      text-decoration: underline; }
+    .content .contact h1 {
+      text-align: center; }
+    .content .contact form {
+      margin-top: 5vh; }
+      .content .contact form label {
+        font-size: 20px;
+        padding: 0; }
+      .content .contact form input {
+        background-color: whitesmoke;
+        display: block;
+        margin-bottom: 15px;
+        height: 35px;
+        color: darkslategray; }
+        .content .contact form input:last-child {
+          background-color: #373443;
+          color: whitesmoke;
+          border: none; }
+          .content .contact form input:last-child:hover {
+            border: 2px solid #373443;
+            background-color: #928dab; }
+      .content .contact form textarea {
+        background-color: whitesmoke;
+        display: block;
+        height: 300px;
+        margin-bottom: 25px;
+        color: darkslategray; }
+  .content .resume {
+    padding: 0px;
+    margin-bottom: 5vh; }
+    .content .resume .resLinks {
+      text-align: center; }
+    .content .resume .download {
+      text-align: left; }
+    .content .resume .docs {
+      text-align: right; }
+    .content .resume h3 {
+      margin-bottom: 25px; }
+      .content .resume h3 a {
+        color: #e6e6e6;
+        cursor: pointer; }
+        .content .resume h3 a:hover {
+          color: #b9b9b9; }
+    .content .resume img {
+      max-width: 100%;
+      box-shadow: -25px 25px 25px rgba(32, 32, 32, 0.45); }
+
+.nav {
+  background-color: #373443;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+  height: 100vh;
+  color: whitesmoke;
+  padding-left: 0px !important; }
+  .nav .navItems {
+    height: 40vh; }
+    .nav .navItems ul {
+      padding-left: 5px;
+      text-align: center; }
+      .nav .navItems ul .burger {
+        display: none; }
+      .nav .navItems ul h3 {
+        cursor: pointer;
+        margin-bottom: 45px; }
+        .nav .navItems ul h3:hover {
+          color: #b9b9b9;
+          border-bottom: 5px solid #b9b9b9; }
+    .nav .navItems .active {
+      border-bottom: 5px solid #b9b9b9;
+      color: #b9b9b9; }
+  .nav .navHeadshot {
+    height: 15;
+    border-radius: 50%;
+    padding: 0px;
+    margin-left: 10px;
+    cursor: pointer; }
+    .nav .navHeadshot:hover > img {
+      border: 2px solid #b9b9b9; }
+    .nav .navHeadshot img {
+      border: 2px solid whitesmoke;
+      border-radius: 50%;
+      max-width: 100%; }
+  .nav .social {
+    height: 33vh;
+    margin-top: 50px;
+    padding-left: 45px; }
+    .nav .social a {
+      text-decoration: none;
+      color: #e4e4e5 !important; }
+    .nav .social i {
+      cursor: pointer;
+      font-size: 45px;
+      display: block;
+      margin-bottom: 30px; }
+      .nav .social i:first-child {
+        font-size: 55px; }
+      .nav .social i:last-child {
+        font-size: 55px; }
+      .nav .social i:hover {
+        color: #b9b9b9; }

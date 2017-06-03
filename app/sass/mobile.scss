@@ -1,0 +1,177 @@
+@media(max-width: 991px){
+    body{
+        overflow: hidden;
+        .content{
+            overflow-y: scroll;
+            height: 92vh;
+            //Portfolio page//
+             $finalClipPath: polygon(100% 50%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0 0%, 50% 0%, 100% 0, 100% 0);
+            $initialClipPath: polygon(50% 35%, 100% 0, 100% 0, 65% 50%, 100% 100%, 50% 65%, 0 100%, 35% 50%, 0 0, 0 0);
+            $middleClipPath: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0);
+
+            @keyframes unfold {
+                0% {clip-path:$initialClipPath;}
+                50% {clip-path: $middleClipPath;}
+                100% {clip-path:$finalClipPath;}
+            }
+             .portfolio{
+                margin-top: 25px;
+                .project{
+                    cursor: pointer;
+                    height: 400px;
+                    display: block;
+                    margin: 0px 0px;
+                    padding: 0px 0px;
+                    text-align: center;
+                    margin-bottom: 100px !important;
+                    &:hover {
+                        box-shadow: -10px 10px 10px rgba(32,32,32,0.7);
+                        transition: box-shadow 1s ease-in-out;
+                        .image{
+                            animation-name: unfold;
+                            animation-duration: 1000ms;
+                            clip-path: $finalClipPath;
+                        }
+                        .details{
+                            display: inline-block;
+                            color: whitesmoke;
+                            background-color: rgba(32,32,32,.55);
+                        }
+                    }
+                    .image{
+                        clip-path: $initialClipPath;
+                        height: 100%;
+                        width: 100%;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        position:relative;
+                        }
+                        .details{
+                            width: 100%;
+                            height: 100%;
+                            display: none;
+                            vertical-align: top;
+                            overflow-wrap: break-word;
+                            p{
+                                overflow-wrap: break-word;
+                            }
+                        }
+                    }
+                }
+            
+            //Contact page//
+            .contact{
+                margin-top: 5vh;
+                span{
+                    text-decoration: underline;
+                }
+                h1{
+                    text-align: center;
+                }
+                form{
+                    margin-top: 5vh;
+                    label{
+                        font-size: 20px;
+                        padding: 0;
+                    }
+                    input{
+                        width: 100%;
+                        background-color: whitesmoke;
+                        display: block;
+                        margin-bottom: 15px;
+                        height: 35px;
+                        color: darkslategray;
+                        &:last-child{
+                            background-color:  #373443;
+                            color: whitesmoke;
+                            border: none;
+                            &:hover{
+                                border: 2px solid #373443;
+                                background-color: #928dab;
+                            }
+                        }
+                    }
+                    textarea{
+                        width: 100%;
+                        background-color: whitesmoke;
+                        display: block;
+                        height: 300px;
+                        margin-bottom: 25px;
+                        color: darkslategray;
+                    }
+                }
+            }
+        }
+        .nav{
+            height: 8vh;
+            background-color: #373443;
+            background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+            height: 100vh;
+            color: whitesmoke;
+            padding-left: 0px !important;
+            .navItems{
+                height: 40vh;
+                ul{
+                    padding-left: 5px;
+                    text-align: center;
+                    h3{
+                        display: inline-block;
+                        cursor: pointer;
+                        margin-left: 7vw;
+                        &:hover{
+                            color: #b9b9b9;
+                            border-bottom: 5px solid #b9b9b9;
+                        }
+                    }
+                }
+                .active{
+                    border-bottom: 5px solid #b9b9b9;
+                    color: #b9b9b9;
+                    
+                }
+            }
+            .navHeadshot{
+                height: 15;
+                border-radius: 50%;
+                padding: 0px;
+                margin-left: 10px;
+                cursor: pointer;
+                &:hover{
+                    &>img{
+                        border: 2px solid #b9b9b9;
+                    }
+                }
+                img{
+                    border: 2px solid whitesmoke;
+                    border-radius: 50%;
+                    max-width: 100%;
+                }
+            }
+            .social{
+                height: 33vh;
+                margin-top: 50px;
+                padding-left: 45px;
+                a{
+                    text-decoration: none;
+                    color: #e4e4e5 !important;
+                }
+                i{
+                    cursor: pointer;
+                    font-size: 45px;
+                    display: block;
+                    margin-bottom: 30px;
+                    &:first-child{
+                        font-size: 55px;
+                    }
+                    &:last-child{
+                        font-size: 55px;
+                    }
+                    &:hover{
+                        color: #b9b9b9;
+                    }
+                }
+            }
+        }
+    }
+}

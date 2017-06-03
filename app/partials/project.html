@@ -1,0 +1,17 @@
+<div class="slick col-md-6">
+    <div class="projectImages col-md-12" ng-repeat="project in vm.singleProject">
+            <div class="screenShot col-md-10 col-md-offset-1" ng-repeat="image in project.images">
+                <img ng-src="{{image}}">
+            </div>
+    </div>
+</div>
+<div class="infoContainer col-md-6">
+    <div class="info col-md-12" data-ng-repeat="project in vm.singleProject">
+        <h1>{{project.title}}</h1>
+        <h3>{{project.description}}</h3>
+        <h3>Technologies Used:</h3>
+        <ul>
+            <h4 ng-repeat="tech in project.technologies">{{tech}}</h4>
+        </ul>
+    </div>
+</div>
