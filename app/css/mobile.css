@@ -88,6 +88,7 @@
       body .content .aboutMe .social {
         display: block; }
     body .nav {
+      position: fixed;
       width: 100%;
       height: 8vh;
       padding: 0px !important;
