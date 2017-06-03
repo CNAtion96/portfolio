@@ -6,11 +6,11 @@
       height: 92vh; }
   @keyframes unfold {
     0% {
-      clip-path: polygon(50% 35%, 100% 0, 100% 0, 65% 50%, 100% 100%, 50% 65%, 0 100%, 35% 50%, 0 0, 0 0); }
+      clip-path: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0); }
     50% {
       clip-path: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0); }
     100% {
-      clip-path: polygon(100% 50%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0 0%, 50% 0%, 100% 0, 100% 0); } }
+      clip-path: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0); } }
       body .content .portfolio {
         margin-top: 25px; }
         body .content .portfolio .project {
@@ -28,13 +28,13 @@
             body .content .portfolio .project:hover .image {
               animation-name: unfold;
               animation-duration: 1000ms;
-              clip-path: polygon(100% 50%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0 0%, 50% 0%, 100% 0, 100% 0); }
+              clip-path: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0); }
             body .content .portfolio .project:hover .details {
               display: inline-block;
               color: whitesmoke;
               background-color: rgba(32, 32, 32, 0.7); }
           body .content .portfolio .project .image {
-            clip-path: polygon(50% 35%, 100% 0, 100% 0, 65% 50%, 100% 100%, 50% 65%, 0 100%, 35% 50%, 0 0, 0 0);
+            clip-path: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0);
             height: 100%;
             width: 100%;
             background-position: center;
