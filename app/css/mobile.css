@@ -24,6 +24,8 @@
           padding: 0px 0px;
           text-align: center;
           margin-bottom: 100px !important; }
+          body .content .portfolio .project:first-child {
+            margin-top: 45px; }
           body .content .portfolio .project:hover {
             box-shadow: -10px 10px 10px rgba(32, 32, 32, 0.7);
             transition: box-shadow 1s ease-in-out; }
