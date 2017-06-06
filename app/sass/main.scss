@@ -142,6 +142,9 @@ body{
             &:hover {
                 box-shadow: -10px 10px 10px rgba(32,32,32,0.7);
                 transition: box-shadow 1s ease-in-out;
+                .hover{
+                    display: none;
+                }
                 .image{
                     animation-name: unfold;
                     animation-duration: 1000ms;
