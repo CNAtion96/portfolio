@@ -153,6 +153,10 @@ body{
                     background-color: rgba(32,32,32,.55);
                 }
             }
+            .hover{
+                text-align: center;
+                color: #b9b9b9;
+            }
             .image{
                 clip-path: $initialClipPath;
                 height: 100%;

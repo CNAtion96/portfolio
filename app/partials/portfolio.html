@@ -1,6 +1,6 @@
 <div class="col-md-12 portfolio">
     <div class="project col-md-6" ng-repeat="project in vm.projects" ng-click="vm.setId(project._id)" ui-sref="project({projectName: '{{project._id}}'})">
-       <h4>(Hover Me)</h4>
+       <h4 class="hover">(Hover Me)</h4>
         <div class="image" back-img="{{project.mainImage}}">
             <div class="details">
                 <h2>{{project.title}}</h2>
