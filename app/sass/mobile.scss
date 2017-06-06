@@ -8,8 +8,6 @@
             height: 92vh;
             //Portfolio page//
              $finalClipPath: polygon(100% 50%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 50%, 0 0%, 50% 0%, 100% 0, 100% 0);
-            $initialClipPath: polygon(50% 35%, 100% 0, 100% 0, 65% 50%, 100% 100%, 50% 65%, 0 100%, 35% 50%, 0 0, 0 0);
-            $middleClipPath: polygon(65% 50%, 100% 100%, 100% 100%, 50% 65%, 0% 100%, 35% 50%, 0 0%, 50% 35%, 100% 0, 100% 0);
 
             @keyframes unfold {
                 0% {clip-path:$finalClipPath;}
