@@ -47,7 +47,3 @@
         });
         
 })();
-
-$('.project').on('hover', function(){
-    $('.hover').text('');
-})
