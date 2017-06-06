@@ -130,6 +130,9 @@ body{
     }
     .portfolio{
         margin-top: 25px;
+        .hidden{
+            display: none;
+        }
         .hover{
             text-align: center;
             color: #b9b9b9;

@@ -48,17 +48,6 @@
         
 })();
 
-var clicked = false;
-(()=>{
-    $('.burger').on('click', function(){                
-        if(clicked === false){
-            $('.bar').addClass('animate');
-            $('.menu').removeClass('hidden');
-            clicked = true;
-        } else if(clicked === true) {
-            $('.bar').removeClass('animate');
-            $('.menu').addClass('hidden');
-            clicked = false;
-        }
+$('.project').on('hover', function(){
+    $('.hover').addClass('hidden');
 })
-})();
