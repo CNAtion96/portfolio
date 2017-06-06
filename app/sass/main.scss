@@ -130,6 +130,12 @@ body{
     }
     .portfolio{
         margin-top: 25px;
+        .hover{
+            text-align: center;
+            color: #b9b9b9;
+            display: inline-block;
+            margin: 15px auto;
+        }
         .project{
             cursor: pointer;
             vertical-align: top;
@@ -146,9 +152,6 @@ body{
                     animation-name: unfold;
                     animation-duration: 1000ms;
                     clip-path: $finalClipPath;
-                    .hover{
-                        display: none !important;
-                    }
                 }
                 .details{
                     display: inline-block;
@@ -165,12 +168,6 @@ body{
                 background-size: cover;
                 background-repeat: no-repeat;
                 position:relative;
-                .hover{
-                    text-align: center;
-                    color: #b9b9b9;
-                    display: inline-block;
-                    border: none;
-                }
             }
                 .details{
                     width: 100%;
