@@ -142,13 +142,13 @@ body{
             &:hover {
                 box-shadow: -10px 10px 10px rgba(32,32,32,0.7);
                 transition: box-shadow 1s ease-in-out;
-                .hover{
-                    display: none !important;
-                }
                 .image{
                     animation-name: unfold;
                     animation-duration: 1000ms;
                     clip-path: $finalClipPath;
+                    .hover{
+                        display: none !important;
+                    }
                 }
                 .details{
                     display: inline-block;
@@ -156,10 +156,7 @@ body{
                     background-color: rgba(32,32,32,.55);
                 }
             }
-            .hover{
-                text-align: center;
-                color: #b9b9b9;
-            }
+            
             .image{
                 clip-path: $initialClipPath;
                 height: 100%;
@@ -168,7 +165,12 @@ body{
                 background-size: cover;
                 background-repeat: no-repeat;
                 position:relative;
+                .hover{
+                    text-align: center;
+                    color: #b9b9b9;
+                    display: inline-block;
                 }
+            }
                 .details{
                     width: 100%;
                     height: 100%;
