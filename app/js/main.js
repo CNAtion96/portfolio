@@ -49,5 +49,5 @@
 })();
 
 $('.project').on('hover', function(){
-    $('.hover').addClass('hidden');
+    $('.hover').text('');
 })
